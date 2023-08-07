@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "face-generation"
+version = "0.1.0"
+description = "Using Generative Adversarial Networks (GANs) to generate realistic images based on the CelebA dataset."
+authors = ["Gianluca Manca <gianluca.manca89@gmail.com>"]
+license = "MIT-License"
+readme = "README.md"
+packages = [{include = "face_generation"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^2.0.1"
+torchvision = "^0.15.2"
+Pillow = "^10.0.0"
+numpy = "^1.25.2"
+matplotlib = "^3.7.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
